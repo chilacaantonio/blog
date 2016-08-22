@@ -1,0 +1,19 @@
+<h1>Articulo</h1>
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @article.text %>
+</p>
+
+<h2>Comentarios</h2>
+<%= render @article.comments %>
+
+
+<h2>Agrega un comentario</h2>
+<%= render "comments/form" %>
+
+<%= link_to 'Aceptar', articles_path %>
